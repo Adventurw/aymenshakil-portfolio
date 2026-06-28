@@ -1,26 +1,19 @@
-import Footer from "../components/layout/Footer";
-import Navbar from "../components/layout/Navbar";
-import Section from "../components/layout/Sections";
-import Container from "../components/layout/Container";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import Hero from "@/components/sections/Hero";
+import About from "@/components/sections/About";
+import Skills from "@/components/sections/Skills";
+import Projects from "@/components/sections/Project";
+import Contact from "@/components/sections/Contact";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-
-      <Section>
-        <Container>
-          <h1 className="text-5xl font-bold">
-            Portfolio
-          </h1>
-
-          <p className="mt-4 text-muted-foreground">
-            Building modern web experiences.
-          </p>
-        </Container>
-      </Section>
-
-      <Footer />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
     </>
   );
 }
