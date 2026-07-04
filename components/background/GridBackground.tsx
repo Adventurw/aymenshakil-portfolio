@@ -11,7 +11,7 @@ export default function GridBackground() {
           absolute inset-0
           bg-[linear-gradient(to_right,hsl(var(--border))_1px,transparent_1px),
           linear-gradient(to_bottom,hsl(var(--border))_1px,transparent_1px)]
-          bg-[size:48px_48px]
+          bg-size-[48px_48px]
           opacity-20
         "
       />
@@ -27,7 +27,7 @@ export default function GridBackground() {
         }}
         className="
           absolute left-1/2 top-1/3
-          h-[500px] w-[500px]
+          h-125 w-125
           -translate-x-1/2
           rounded-full
           bg-primary/15

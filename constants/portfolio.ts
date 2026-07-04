@@ -2,11 +2,11 @@ export const portfolio = {
   personal: {
     firstName: "Aymen",
     lastName: "Shakil",
-    fullName: "Aymen Shakil",
+    fullName: "Jack Of All Trade.",
 
     title: "Software Engineer",
 
-    subtitle: "Frontend Developer • Future Information Systems Auditor",
+    subtitle: "Engineering Softwares. Designing Experiences. Auditing Systems.",
 
     location: "Karachi, Pakistan",
 
@@ -30,6 +30,6 @@ export const portfolio = {
       "Building modern web experiences with clean code and quality-first thinking.",
 
     description:
-      "Computer Science graduate passionate about Frontend Development, Software Quality Assurance, and Information Systems Audit. I enjoy building beautiful user experiences while ensuring reliability, security, and software quality.",
+      "I don't believe in mastering a single tool. I believe in mastering the ability to learn any tool.That is what engineering really is.",
   },
 };

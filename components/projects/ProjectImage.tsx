@@ -10,7 +10,7 @@ export default function ProjectImage({
   title,
 }: ProjectImageProps) {
   return (
-    <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" >
+    <div className="absolute inset-0 bg-linear-to-t from-background/80 via-transparent to-transparent" >
       <Image
         src={image}
         alt={title}

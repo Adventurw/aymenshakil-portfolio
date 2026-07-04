@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import {Input} from "@/components/ui/input";
 import {Textarea} from "@/components/ui/textarea";
 
+
 export default function ContactForm() {
   const [form, setForm] = useState({
     name: "",
@@ -23,19 +24,52 @@ export default function ContactForm() {
     }));
   }
 
-  function handleSubmit(
-    e: React.FormEvent<HTMLFormElement>
-  ) {
-    e.preventDefault();
+const [loading, setLoading] = useState(false);
 
-    console.log(form);
+const [status, setStatus] = useState("");
+  async function handleSubmit(
+  e: React.FormEvent<HTMLFormElement>
+) {
+  e.preventDefault();
 
-    // Later:
-    // EmailJS
-    // Formspree
-    // API Route
-    // Supabase Edge Function
+  setLoading(true);
+  setStatus("");
+
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+
+      headers: {
+        "Content-Type": "application/json",
+      },
+
+      body: JSON.stringify(form),
+    });
+
+    if (res.ok) {
+      setStatus("Message sent successfully!");
+
+      setForm({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+
+    } else {
+
+      setStatus("Something went wrong.");
+    }
+
+  } catch {
+
+    setStatus("Server error.");
+
+  } finally {
+
+    setLoading(false);
   }
+}
 
   return (
     <form
@@ -75,9 +109,15 @@ export default function ContactForm() {
       <Button
         type="submit"
         size="lg"
+        disabled={loading}
       >
-        Send Message
+        {loading ? "Sending..." : "Send Message"}
       </Button>
+      {status && (
+        <p className="text-sm text-primary">
+          {status}
+        </p>
+      )}
     </form>
   );
 }

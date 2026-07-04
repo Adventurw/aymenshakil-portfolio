@@ -4,7 +4,7 @@ import {
 } from "@/types/contact";
 
 export const contactSection: ContactSection = {
-  eyebrow: "Contact",
+  eyebrow: "The Final Card",
 
   title: "Let's Build Something Great Together",
 

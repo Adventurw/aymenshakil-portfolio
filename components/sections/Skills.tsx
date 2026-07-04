@@ -26,7 +26,7 @@ export default function Skills() {
           className="mb-16 text-center"
         >
           <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-primary">
-            Skills
+            The Arsenal
           </p>
 
           <h2 className="text-4xl font-bold">

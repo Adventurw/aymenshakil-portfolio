@@ -20,6 +20,7 @@ export default function HeroStats() {
           <Card className="p-6 text-center">
             <h3 className="text-3xl font-bold text-primary">
               {stat.value}
+              {stat.suffix}
             </h3>
 
             <p className="mt-2 text-sm text-muted-foreground">

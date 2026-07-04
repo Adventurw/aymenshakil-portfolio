@@ -3,9 +3,9 @@ import {
   ProjectsSection,
 } from "@/types/projects";
 export const projectsSection: ProjectsSection = {
-  eyebrow: "Projects",
+  eyebrow: "The Deck",
 
-  title: "Featured Work",
+  title: "Selected Work",
 
   description:
     "A collection of software engineering, frontend, quality assurance, networking, and information systems projects showcasing my technical skills and continuous learning journey.",
@@ -22,6 +22,11 @@ export const projectFilters = [
 export const projects: Project[] = [
   {
     title: "Playwright Automation Framework",
+    arcana: "THE ANALYST",
+    numeral: "Ⅲ",
+    quote:
+    "Quality is engineered long before software reaches production.",
+
 
     description:
       "Reusable automation testing framework using Playwright, JavaScript, Page Object Model, Hooks, and Allure reporting.",
@@ -51,7 +56,9 @@ export const projects: Project[] = [
 
   {
     title: "Academic Task Agent",
-
+    arcana: "THE BUILDER",
+    numeral: "Ⅰ",
+    quote: "Complex systems become elegant through thoughtful engineering.",
     description:
       "Operating-system inspired academic scheduling application implementing MLFQ, EDF scheduling, and Google Calendar integration.",
 
@@ -79,7 +86,9 @@ export const projects: Project[] = [
 
   {
     title: "Adactin Hotel Automation",
-
+    arcana: "THE ANALYST",
+    numeral: "Ⅲ",
+    quote: "Every defect prevented is trust preserved.",
     description:
       "End-to-end UI automation suite built using Playwright to validate the Adactin Hotel web application.",
 
@@ -107,7 +116,9 @@ export const projects: Project[] = [
 
   {
     title: "Advanced IP Subnet Calculator",
-
+    arcana: "THE ARCHITECT",
+    numeral: "Ⅱ",
+    quote: "Networks reveal their beauty when complexity becomes predictable.",
     description:
       "Flask-based networking application supporting IPv4, IPv6, CIDR, and VLSM subnet calculations.",
 

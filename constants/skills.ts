@@ -5,7 +5,7 @@ import {
 
 // Section Heading
 export const skillsSection: SkillsSection = {
-  eyebrow: "Skills",
+  eyebrow: "The Arsenal",
 
   title: "Technologies & Expertise",
 

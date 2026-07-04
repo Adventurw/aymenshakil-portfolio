@@ -16,7 +16,7 @@ export default function Logo() {
         </p>
 
         <p className="text-xs text-muted-foreground">
-          Software Engineer
+          Computer Scientist
         </p>
       </div>
     </Link>

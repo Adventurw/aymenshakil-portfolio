@@ -14,6 +14,9 @@ export type ProjectStatus =
 
 export interface Project {
   title: string;
+  arcana: string;
+  numeral: string;
+  quote: string;
   description: string;
 
   image: string;

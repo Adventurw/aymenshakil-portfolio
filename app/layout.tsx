@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Space_Grotesk, Geist_Mono } from "next/font/google";
+import BackgroundEffects from "@/components/background/BackgroundEffects";
 
 import "./globals.css";
 
@@ -7,19 +8,25 @@ import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-sans",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const heading = Space_Grotesk({
   subsets: ["latin"],
+  variable: "--font-heading",
+});
+
+const mono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-geist-mono",
 });
 
 export const metadata: Metadata = {
   title: "Aymen Shakil",
-  description: "Software Engineer | Frontend Developer | Future IS Auditor",
+  description:
+    "Software Engineer | Frontend Developer | Future IS Auditor",
 };
 
 export default function RootLayout({
@@ -31,20 +38,26 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${geistSans.variable} ${geistMono.variable} h-full`}
+      className={`${inter.variable} ${heading.variable} ${mono.variable}`}
     >
-      <body className="min-h-screen bg-background text-foreground antialiased">
-        <ThemeProvider>
-          <div className="flex min-h-screen flex-col">
-            <Navbar />
-
-            <main className="flex-1">
-              {children}
-            </main>
-
-            <Footer />
-          </div>
-        </ThemeProvider>
+      <body className="min-h-screen bg-background text-foreground antialiased overflow-x-hidden">
+      <ThemeProvider>
+      
+        <BackgroundEffects />
+      
+        <div className="relative flex min-h-screen flex-col">
+      
+          <Navbar />
+      
+          <main className="relative flex-1">
+            {children}
+          </main>
+      
+          <Footer />
+      
+        </div>
+      
+      </ThemeProvider>
       </body>
     </html>
   );

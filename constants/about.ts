@@ -1,7 +1,7 @@
 import { AboutSection } from "@/types/about";
 
 export const about: AboutSection = {
-  title: "About Me",
+  title: "The Story",
 
   heading: "Computer Science Graduate with a Passion for Quality Software",
 
