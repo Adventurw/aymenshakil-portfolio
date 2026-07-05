@@ -13,11 +13,13 @@ import {
 } from "@/lib/animations";
 
 import { skills } from "@/constants/skills";
+import Reveal from "../common/Reveal";
 
 export default function Skills() {
   return (
     <Section id="skills">
       <Container>
+        <Reveal>
         <motion.div
           variants={fadeUp}
           initial="hidden"
@@ -59,6 +61,7 @@ export default function Skills() {
             />
           ))}
         </motion.div>
+      </Reveal>
       </Container>
     </Section>
   );

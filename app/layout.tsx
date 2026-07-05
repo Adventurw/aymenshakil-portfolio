@@ -7,6 +7,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import ScrollProgress from "@/components/common/ScrollProgress";
+import CursorGlow from "@/components/common/CursorGlow";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -41,6 +43,8 @@ export default function RootLayout({
       className={`${inter.variable} ${heading.variable} ${mono.variable}`}
     >
       <body className="min-h-screen bg-background text-foreground antialiased overflow-x-hidden">
+        <CursorGlow/>
+        <ScrollProgress />
       <ThemeProvider>
       
         <BackgroundEffects />

@@ -51,99 +51,106 @@
 :root {
   --radius: 1rem;
 
-  /* Base */
-  --background: #F7F3EA;
-  --foreground: #172435;
+  /* ===========================
+      PARCHMENT
+  =========================== */
 
-  /* Cards */
-  --card: #FCFAF6;
-  --card-foreground: #2F4156;
+  --background: #F6F0E2;
+  --foreground: #2B2115;
 
-  --popover: #FFFFFF;
-  --popover-foreground: #2F4156;
+  /* Ivory card */
+  --card: #FFF9EE;
+  --card-foreground: #2B2115;
 
-  /* Brand */
-  --primary: #172435;
-  --primary-foreground: #FFFFFF;
+  --popover: #FFFDF8;
+  --popover-foreground: #2B2115;
 
-  --secondary: #E7E0D5;
-  --secondary-foreground: #2F4156;
+  /* Antique Gold */
+  --primary: #A77A1F;
+  --primary-foreground: #FFFDF8;
 
-  --accent: #6E9FC6;
-  --accent-foreground: #FFFFFF;
+  /* Soft parchment */
+  --secondary: #EEE4CF;
+  --secondary-foreground: #3A2D1B;
 
-  /* Utility */
-  --muted: #E6E0DC;
-  --muted-foreground: #567C8D;
+  /* Rich gold highlight */
+  --accent: #C8A54B;
+  --accent-foreground: #2B2115;
 
-  --destructive: #DC2626;
+  --muted: #E8DDC9;
+  --muted-foreground: #74664D;
 
-  --border: #DDD4C7;
-  --input: #FFFFFF;
-  --ring: #C7A14A;
+  --destructive: #C0392B;
 
-  /* Charts */
-  --chart-1: #2F4156;
-  --chart-2: #567C8D;
-  --chart-3: #C8D9E6;
-  --chart-4: #F5EFEB;
-  --chart-5: #FFFFFF;
+  /* GOLD BORDERS */
+  --border: rgba(167,122,31,.30);
+  --input: #FFFDF8;
+  --ring: #C8A54B;
 
-  /* Sidebar */
-  --sidebar: #FFFFFF;
-  --sidebar-foreground: #2F4156;
-  --sidebar-primary: #2F4156;
-  --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: #567C8D;
-  --sidebar-accent-foreground: #FFFFFF;
-  --sidebar-border: #D7D2CF;
-  --sidebar-ring: #567C8D;
+  --chart-1: #A77A1F;
+  --chart-2: #C8A54B;
+  --chart-3: #D8BC72;
+  --chart-4: #E8DDC9;
+  --chart-5: #FFFDF8;
+
+  --sidebar: #FFF9EE;
+  --sidebar-foreground: #2B2115;
+  --sidebar-primary: #A77A1F;
+  --sidebar-primary-foreground: #FFFDF8;
+  --sidebar-accent: #C8A54B;
+  --sidebar-accent-foreground: #2B2115;
+  --sidebar-border: rgba(167,122,31,.22);
+  --sidebar-ring: #C8A54B;
 }
 
 .dark {
   --radius: 1rem;
 
-  --background: #172435;
-  --foreground: #F7F3EA;
+  /* BLACK VELVET */
 
-  --card: #23364B;
-  --card-foreground: #F5EFEB;
+  --background: #050505;
+  --foreground: #F8F2E8;
 
-  --popover: #3B536B;
-  --popover-foreground: #F5EFEB;
+  --card: #0D0D0D;
+  --card-foreground: #F8F2E8;
 
-  --primary: #F7F3EA;
-  --primary-foreground: #2F4156;
+  --popover: #101010;
+  --popover-foreground: #F8F2E8;
 
-  --secondary: #30465E;
-  --secondary-foreground: #FFFFFF;
+  /* Gold */
 
-  --accent: #6E9FC6;
-  --accent-foreground: #2F4156;
+  --primary: #D4AF37;
+  --primary-foreground: #050505;
 
-  --muted: #49677A;
-  --muted-foreground: #C8D9E6;
+  --secondary: #171717;
+  --secondary-foreground: #F8F2E8;
+
+  --accent: #E2C163;
+  --accent-foreground: #050505;
+
+  --muted: #191919;
+  --muted-foreground: #9E988E;
 
   --destructive: #DC2626;
 
-  --border: #35506D;
-  --input: #3B536B;
-  --ring: #C7A14A;
+  --border: rgba(212,175,55,.18);
+  --input: #121212;
+  --ring: #D4AF37;
 
-  --chart-1: #567C8D;
-  --chart-2: #C8D9E6;
-  --chart-3: #F5EFEB;
-  --chart-4: #FFFFFF;
-  --chart-5: #2F4156;
+  --chart-1: #D4AF37;
+  --chart-2: #E2C163;
+  --chart-3: #FFF2C9;
+  --chart-4: #F8F2E8;
+  --chart-5: #0D0D0D;
 
-  --sidebar: #3B536B;
-  --sidebar-foreground: #F5EFEB;
-  --sidebar-primary: #F5EFEB;
-  --sidebar-primary-foreground: #2F4156;
-  --sidebar-accent: #567C8D;
-  --sidebar-accent-foreground: #FFFFFF;
-  --sidebar-border: #567C8D;
-  --sidebar-ring: #C8D9E6;
+  --sidebar: #0F0F0F;
+  --sidebar-foreground: #F8F2E8;
+  --sidebar-primary: #D4AF37;
+  --sidebar-primary-foreground: #050505;
+  --sidebar-accent: #E2C163;
+  --sidebar-accent-foreground: #050505;
+  --sidebar-border: rgba(212,175,55,.18);
+  --sidebar-ring: #D4AF37;
 }
 
 @layer base {
@@ -157,15 +164,26 @@
   }
 
   body {
-    font-family: var(--font-sans);
-    background: var(--background);
-    color: var(--foreground);
-    min-height: 100vh;
-    overflow-x: hidden;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+  font-family: var(--font-sans);
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(212,175,55,.06),
+      transparent 35%
+    ),
+    var(--background);
+
+  color: var(--foreground);
+
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
   h1,
   h2,
@@ -228,67 +246,60 @@
   }
 
   .glass {
-    background: rgba(255,255,255,.05);
-    backdrop-filter: blur(18px);
-    border: 1px solid rgba(255,255,255,.08);
-  }
+  background: rgba(10,10,10,.72);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(212,175,55,.12);
+}
 
-  .glass-light {
-    background: rgba(255,255,255,.7);
-    backdrop-filter: blur(18px);
-    border: 1px solid rgba(255,255,255,.45);
-  }
+.glass-light {
+  background: rgba(255,250,240,.72);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(167,122,31,.18);
+}
 
-  .shadow-soft {
+  .shadow-soft{
     box-shadow:
-      0 10px 30px rgba(0,0,0,.08);
-  }
+      0 12px 30px rgba(167,122,31,.08);
+}
 
-  .shadow-premium {
+  .shadow-premium{
     box-shadow:
-      0 25px 60px rgba(0,0,0,.18);
-  }
+      0 30px 70px rgba(0,0,0,.22);
+}
 
 }
-::selection {
-  background: #567C8D;
-  color: white;
+::selection{
+    background:#D4AF37;
+    color:#111;
 }
 .aurora-primary{
     background:
-    radial-gradient(
-        circle,
-        rgba(86,124,141,.18) 0%,
-        rgba(86,124,141,.08) 35%,
-        transparent 75%
-    );
-
-    filter: blur(120px);
+        radial-gradient(
+            circle,
+            rgba(212,175,55,.18),
+            transparent 72%
+        );
+    filter:blur(120px);
 }
 
 .aurora-secondary{
-
     background:
-    radial-gradient(
-        circle,
-        rgba(200,217,230,.12) 0%,
-        rgba(200,217,230,.05) 45%,
-        transparent 75%
-    );
-
-    filter: blur(140px);
+        radial-gradient(
+            circle,
+            rgba(167,122,31,.10),
+            transparent 75%
+        );
+    filter:blur(140px);
 }
 
 .aurora-accent{
-
     background:
-    radial-gradient(
-        circle,
-        rgba(245,239,235,.08) 0%,
-        transparent 70%
-    );
-
-    filter: blur(120px);
+        radial-gradient(
+            circle,
+            rgba(255,248,230,.06),
+            transparent 70%
+        );
+    filter:blur(120px);
 }
 /* ==========================
    ENGINEERING GRID

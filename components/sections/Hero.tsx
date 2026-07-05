@@ -5,6 +5,8 @@ import GridBackground from "@/components/background/GridBackground";
 import HeroContent from "@/components/hero/HeroContent";
 import HeroImage from "@/components/hero/HeroImage";
 import ScrollIndicator from "@/components/hero/ScrollIndicator";
+import Reveal from "../common/Reveal";
+import FloatingTech from "../common/FloatingTech";
 
 export default function Hero() {
   return (
@@ -16,9 +18,13 @@ export default function Hero() {
 
       <Container>
         <div className="grid items-center gap-20 lg:grid-cols-2">
-          <HeroContent />
-
-          <HeroImage />
+          <Reveal>
+            <FloatingTech/>
+            <HeroContent />
+          </Reveal>
+          
+            <HeroImage />
+          
         </div>
       </Container>
 

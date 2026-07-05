@@ -4,6 +4,9 @@ import { motion } from "framer-motion";
 
 import { arcanaCards } from "@/constants/arcana";
 import ArcanaBadge from "@/components/arcana/ArcanaBadge";
+import { useState } from "react";
+
+
 
 import {
   deckContainer,
@@ -11,6 +14,9 @@ import {
 } from "@/lib/arcanaAnimations";
 
 export default function Deck() {
+  const [selectedCard, setSelectedCard] = useState<
+  (typeof arcanaCards)[number] | null
+  >(null);
   return (
     <section className="relative py-40">
 
@@ -55,15 +61,21 @@ export default function Deck() {
             key={card.title}
             variants={deckCard}
           >
-            <ArcanaBadge
-              numeral={card.numeral}
-              title={card.title}
-              icon={card.icon}
-            />
+            <div
+              onClick={() => setSelectedCard(card)}
+              className="cursor-pointer"
+            >
+              <ArcanaBadge
+                numeral={card.numeral}
+                title={card.title}
+                icon={card.icon}
+              />
+            </div>
           </motion.div>
         ))}
       </motion.div>
-
+      {/* Modal */}
+      
     </section>
   );
 }

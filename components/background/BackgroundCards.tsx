@@ -138,7 +138,7 @@ export default function BackgroundCards() {
                   text-[220px]
                   font-light
                   text-[#F7F3EA]/30
-                  dark:text-[#C7A14A]/35
+                  dark:text-primary
                   drop-shadow-[0_0_20px_rgba(199,161,74,0.12)]
                 "
               >

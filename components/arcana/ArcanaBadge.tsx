@@ -30,7 +30,7 @@ export default function ArcanaBadge({
     >
       {/* Roman Numeral */}
 
-      <h2 className="font-serif text-6xl text-[#F7F3EA]">
+      <h2 className="font-serif text-6xl text-foreground">
         {numeral}
       </h2>
 
@@ -43,7 +43,7 @@ export default function ArcanaBadge({
           text-[11px]
           uppercase
           tracking-[0.42em]
-          text-[#C7A14A]
+          text-primary
           text-center
         "
       >
@@ -52,13 +52,13 @@ export default function ArcanaBadge({
 
       {/* Icon */}
 
-      <div className="text-6xl text-[#C7A14A]/80">
+      <div className="text-6xl text-primary">
         {<Icon
           className="
             my-5
             h-9
             w-9
-            text-[#C7A14A]
+            text-primary
             stroke-[1.5]
           "
         />}
@@ -66,7 +66,7 @@ export default function ArcanaBadge({
 
       <div className="h-px w-16 bg-[#C7A14A]/30" />
 
-      <p className="text-sm text-[#F7F3EA]/70">
+      <p className="text-sm text-foreground">
         {status}
       </p>
 

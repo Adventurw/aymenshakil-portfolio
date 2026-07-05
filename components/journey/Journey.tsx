@@ -1,5 +1,6 @@
 "use client";
 
+import Reveal from "../common/Reveal";
 import JourneyHeader from "./JourneyHeader";
 import JourneyTimeline from "./JourneyTimeline";
 
@@ -10,8 +11,9 @@ export default function Journey() {
       className="container py-32"
     >
       <JourneyHeader />
-
+       <Reveal>
       <JourneyTimeline />
+      </Reveal>
     </section>
   );
 }

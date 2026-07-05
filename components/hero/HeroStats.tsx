@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import { Card } from "@/components/ui/card";
 import { heroStats } from "@/constants/stats";
+import AnimatedCounter from "@/components/common/AnimatedCounter";
 
 export default function HeroStats() {
   return (
@@ -19,8 +20,7 @@ export default function HeroStats() {
         >
           <Card className="p-6 text-center">
             <h3 className="text-3xl font-bold text-primary">
-              {stat.value}
-              {stat.suffix}
+              <AnimatedCounter end={stat.value} suffix={stat.suffix} />
             </h3>
 
             <p className="mt-2 text-sm text-muted-foreground">
