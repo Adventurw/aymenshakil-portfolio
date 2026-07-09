@@ -1,10 +1,7 @@
 "use client";
 
-import Link from "next/link";
-
 import { Button } from "@/components/ui/button";
 import { Icons } from "@/components/ui/icons";
-import { portfolio } from "@/constants/portfolio";
 
 export default function HeroButtons() {
   const Arrow = Icons.arrowRight;
@@ -12,18 +9,20 @@ export default function HeroButtons() {
 
   return (
     <div className="mt-10 flex flex-wrap gap-4">
+      {/* View Projects */}
       <Button size="lg" asChild className="group">
-        <Link href="#projects">
+        <a href="#projects">
           View Projects
           <Arrow className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-        </Link>
+        </a>
       </Button>
 
+      {/* Download Resume */}
       <Button variant="outline" size="lg" asChild className="group">
-        <Link href={portfolio.personal.resume}>
+        <a href="/Aymen_Shakil_Resume.pdf" download>
           <Download className="mr-2 h-4 w-4 transition-transform duration-300 group-hover:-translate-y-1" />
           Resume
-        </Link>
+        </a>
       </Button>
     </div>
   );
