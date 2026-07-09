@@ -71,12 +71,14 @@ export default function HeroContent() {
       <Text className="mt-8 text-lg leading-8 text-muted-foreground">
         {portfolio.hero.description}
       </Text>
-
+<div className="mt-10 flex flex-col gap-8">
       <HeroButtons />
 
       <HeroSocials />
-
+</div>
+<div className="mt-12">
       <HeroStats />
+      </div>
     </motion.div>
   );
 }
