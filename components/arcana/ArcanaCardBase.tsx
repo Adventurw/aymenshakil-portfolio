@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import NoiseTexture from "@/components/background/NoiseTexture";
 
 interface ArcanaCardBaseProps {
   children: React.ReactNode;
@@ -30,8 +31,7 @@ export default function ArcanaCardBase({
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(199,161,74,0.08),transparent_60%)]" />
 
       {/* noise texture */}
-      <div className="pointer-events-none absolute inset-0 opacity-[0.03] bg-[url('/noise.png')]" />
-
+      <NoiseTexture />
       {/* inner content */}
       <div className="relative z-10">{children}</div>
     </motion.div>

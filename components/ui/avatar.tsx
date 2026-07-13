@@ -56,13 +56,14 @@ export function Avatar({
         className
       )}
     >
-      <Image
-        src={src}
-        alt={alt}
-        fill
-        priority={priority}
-        className="object-cover"
-      />
+    <Image
+      src={src}
+      alt={alt}
+      fill
+      priority={priority}
+      sizes="(max-width: 768px) 100vw, 360px"
+      className="object-cover"
+    />
     </div>
   );
 }

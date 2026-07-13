@@ -9,6 +9,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ScrollProgress from "@/components/common/ScrollProgress";
 import CursorGlow from "@/components/common/CursorGlow";
+import SoundToggle from "@/components/audio/SoundToggle";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -62,6 +63,7 @@ export default function RootLayout({
         </div>
       
       </ThemeProvider>
+      <SoundToggle />
       </body>
     </html>
   );

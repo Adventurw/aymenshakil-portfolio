@@ -29,27 +29,12 @@ export const journey: JourneyItem[] = [
       "Next.js",
       "Tailwind",
       "TypeScript",
+      "MongoDB"
     ],
   },
 
   {
     year: "2024",
-    title: "Quality Engineering",
-    subtitle: "The Analyst",
-    icon: "analyst",
-    description:
-      "Built automation frameworks, testing projects, networking tools, and software quality solutions.",
-
-    technologies: [
-      "Playwright",
-      "Automation",
-      "Networking",
-      "QA",
-    ],
-  },
-
-  {
-    year: "2025",
     title: "Artificial Intelligence",
     subtitle: "The Creator",
     icon: "creator",
@@ -64,8 +49,23 @@ export const journey: JourneyItem[] = [
     ],
   },
 
+   {
+    year: "2025",
+    title: "Quality Engineering",
+    subtitle: "The Analyst",
+    icon: "analyst",
+    description:
+      "Built automation frameworks, testing projects, networking tools, and software quality solutions.",
+
+    technologies: [
+      "Playwright",
+      "Automation",
+      "Networking",
+      "QA",
+    ],
+  },
   {
-    year: "Future",
+    year: "2026 & Future",
     title: "Information Systems Auditor",
     subtitle: "The Auditor",
     icon: "auditor",

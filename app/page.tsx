@@ -8,6 +8,8 @@ import Contact from "@/components/sections/Contact";
 import Journey from "@/components/journey/Journey";
 import Experience from "@/components/experience/Experience";
 import Reveal from "@/components/common/Reveal";
+import { Link } from "lucide-react";
+
 
 export default function Home() {
   return (

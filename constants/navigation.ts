@@ -16,7 +16,7 @@ export const navigation = [
     href: "#journey",
   },
   {
-    name:"blog",
+    name:"Blog",
     href:"/blog"
   },
   {
