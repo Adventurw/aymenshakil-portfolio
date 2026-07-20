@@ -10,6 +10,7 @@ import Footer from "@/components/layout/Footer";
 import ScrollProgress from "@/components/common/ScrollProgress";
 import CursorGlow from "@/components/common/CursorGlow";
 import SoundToggle from "@/components/audio/SoundToggle";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -64,6 +65,7 @@ export default function RootLayout({
       
       </ThemeProvider>
       <SoundToggle />
+      <Analytics />
       </body>
     </html>
   );
